@@ -80,7 +80,7 @@ Use this software and the retrieved materials at your own risk.
 
 ### Required external assets
 
-The downloader retrieves the 34 required NVIDIA Isaac SimReady 6.0 asset families listed in `download_simready_assets.py` from NVIDIA's public Omniverse content bucket. These payloads are not present in Git or Git LFS. They are governed by the retained [NVIDIA Software License Agreement](LICENSES/LicenseRef-NVIDIA-SOFTWARE-LICENSE-AGREEMENT.txt), the retained [Product Specific Terms for NVIDIA AI Products](LICENSES/LicenseRef-NVIDIA-AI-PRODUCT-TERMS.txt), which incorporate the NVIDIA Omniverse product specific terms, and any applicable asset-specific terms. See the [current Omniverse licensing page](https://docs.omniverse.nvidia.com/ov/latest/common/NVIDIA_Omniverse_License_Agreement.html) for the official online source.
+The downloader retrieves the 33 required NVIDIA Isaac SimReady 6.0 asset families listed in `download_simready_assets.py` from NVIDIA's public Omniverse content bucket. These payloads are not present in Git or Git LFS. They are governed by the retained [NVIDIA Software License Agreement](LICENSES/LicenseRef-NVIDIA-SOFTWARE-LICENSE-AGREEMENT.txt), the retained [Product Specific Terms for NVIDIA AI Products](LICENSES/LicenseRef-NVIDIA-AI-PRODUCT-TERMS.txt), which incorporate the NVIDIA Omniverse product specific terms, and any applicable asset-specific terms. See the [current Omniverse licensing page](https://docs.omniverse.nvidia.com/ov/latest/common/NVIDIA_Omniverse_License_Agreement.html) for the official online source.
 
 ## Repository structure
 

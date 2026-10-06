@@ -16,7 +16,7 @@
 
 """Download and patch NVIDIA Isaac SimReady 6.0 assets required by RoboVoLo.
 
-Downloads 34 assets from the public NVIDIA Omniverse S3 bucket (or copies from a
+Downloads 33 assets from the public NVIDIA Omniverse S3 bucket (or copies from a
 local Isaac SimReady 6.0 download), then applies physics and material patches so
 they work correctly in Isaac Sim simulation.
 
@@ -96,7 +96,6 @@ ASSETS: dict[str, tuple[str, str]] = {
     "bowl_019": ("dishware", "sm_kitchenware_bowl_b01_01"),
     "large_plastic_plate": ("dishware", "sm_dishware_plastic_bigPlate_a01_01"),
     # Food and drink
-    "avocado": ("food_and_drink", "objaverse_food_produce_avocado_v01_00"),
     "banana_2": ("food_and_drink", "sm_food_produce_banana_a01_01"),
     "beer_bottle_003": ("food_and_drink", "sm_food_beverage_beerBottle_o01_01"),
     "bitter_melon": ("food_and_drink", "sm_food_produce_bitterMelon_a01_01"),
@@ -131,7 +130,6 @@ EXCLUDE_SUFFIXES = {".wrapp"}
 # (mass_kg, (com_x, com_y, com_z), (inertia_x, inertia_y, inertia_z))
 
 PHYSICS_PATCHES: dict[str, tuple[float, tuple, tuple]] = {
-    "avocado": (0.2326, (-0.0016, 0.0008, 0.0336), (0.0000313, 0.0000297, 0.0000251)),
     "banana_2": (0.12, (0.0034, 0.0002, 0.0190), (0.0000246, 0.0000073, 0.0000246)),
     "beer_bottle_003": (0.18, (0.0001, -0.0001, 0.1073), (0.000396, 0.000396, 0.0000145)),
     "bitter_melon": (0.1462, (-0.0018, 0.0000, 0.0210), (0.0000595, 0.0000101, 0.0000595)),
@@ -531,7 +529,7 @@ def main() -> int:
     for terms_path in RETAINED_TERMS:
         print(f"    - {terms_path}")
     print(f"  Official source: {OMNIVERSE_TERMS_URL}")
-    print("  The 34 requested asset families are:")
+    print(f"  The {len(ASSETS)} requested asset families are:")
     for name in ASSETS:
         print(f"    - {name}")
     print()

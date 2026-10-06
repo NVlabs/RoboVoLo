@@ -27,7 +27,7 @@ Copyright/creator: ambientCG contributors
 
 ## NVIDIA Isaac SimReady 6.0 (not redistributed)
 
-`download_simready_assets.py` retrieves the 34 required asset families enumerated in that script from NVIDIA's public Omniverse content bucket under the `Assets/Isaac/6.0/Isaac/SimReady/` prefix. The retrieved files are **not distributed with this repository**.
+`download_simready_assets.py` retrieves the 33 required asset families enumerated in that script from NVIDIA's public Omniverse content bucket under the `Assets/Isaac/6.0/Isaac/SimReady/` prefix. The retrieved files are **not distributed with this repository**.
 
 - Source catalog: <https://omniverse-content-production.s3-us-west-2.amazonaws.com/>
 - Governing terms: the [NVIDIA Software License Agreement](LICENSES/LicenseRef-NVIDIA-SOFTWARE-LICENSE-AGREEMENT.txt) and [Product Specific Terms for NVIDIA AI Products](LICENSES/LicenseRef-NVIDIA-AI-PRODUCT-TERMS.txt), which incorporate the NVIDIA Omniverse product specific terms. Official sources are linked in `ASSET_LICENSES.md`.

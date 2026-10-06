@@ -448,7 +448,9 @@ def patch_nested_rigid_bodies(asset_dir: Path, name: str) -> None:
             continue
 
         changed = False
-        for prim in stage.Traverse():
+        # The SimReady payloads author these prims as `over`s, which
+        # Traverse() (defined prims only) skips.
+        for prim in stage.TraverseAll():
             if prim.HasAPI(UsdPhysics.RigidBodyAPI):
                 prim.RemoveAPI(UsdPhysics.RigidBodyAPI)
                 changed = True
